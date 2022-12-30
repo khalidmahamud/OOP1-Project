@@ -17,7 +17,7 @@ public class StartUp
 		JLabel label = new JLabel();
         label.setBounds(0, 30, 450, 270);
 
-		ImageIcon bg = new ImageIcon("start3.png");
+		ImageIcon bg = new ImageIcon("Pictures\\start3.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);

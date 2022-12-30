@@ -46,7 +46,7 @@ public class agentSignUpBN extends JFrame {
         JLabel label = new JLabel();
         label.setSize(750, 463);
 
-        ImageIcon bg = new ImageIcon("bg.png");
+        ImageIcon bg = new ImageIcon("Pictures\\bg.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -417,7 +417,7 @@ public class agentSignUpBN extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Agent");
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {

@@ -36,7 +36,7 @@ public class Recharge extends JFrame {
         JLabel label = new JLabel();
         label.setSize(750, 463);
 
-        ImageIcon bg = new ImageIcon("bg.png");
+        ImageIcon bg = new ImageIcon("Pictures\\bg.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -82,7 +82,7 @@ public class Recharge extends JFrame {
         button1.setBackground(new Color(0, 59, 79));
         button1.setBorder(BorderFactory.createEmptyBorder());
         button1.setFocusPainted(false);
-        homeIcon = new ImageIcon("home.png");
+        homeIcon = new ImageIcon("Pictures\\home.png");
         button1.setIcon(homeIcon);
         button1.setText("Home");
         button1.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -119,7 +119,7 @@ public class Recharge extends JFrame {
         button2.setBackground(new Color(0, 59, 79));
         button2.setBorder(BorderFactory.createEmptyBorder());
         button2.setFocusPainted(false);
-        ImageIcon historyIcon = new ImageIcon("history.png");
+        ImageIcon historyIcon = new ImageIcon("Pictures\\history.png");
         button2.setIcon(historyIcon);
         button2.setText("Transactions");
         button2.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -154,7 +154,7 @@ public class Recharge extends JFrame {
         button3.setBounds(495, 75, 232, 50);
         button3.setBackground(new Color(0, 59, 79));
         button3.setBorder(BorderFactory.createEmptyBorder());
-        menuIcon = new ImageIcon("menu.png");
+        menuIcon = new ImageIcon("Pictures\\menu.png");
         button3.setIcon(menuIcon);
         button3.setText("Menu");
         button3.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -186,7 +186,7 @@ public class Recharge extends JFrame {
         });
  
         //profile button
-        button4 = new JButton(new ImageIcon("profile.png"));
+        button4 = new JButton(new ImageIcon("Pictures\\profile.png"));
         button4.setBounds(675, 15, 40, 40);
         button4.setBackground(new Color(238, 238, 238));
         button4.setBorder(BorderFactory.createEmptyBorder());
@@ -212,7 +212,7 @@ public class Recharge extends JFrame {
         backButton.setBackground(new Color(223, 245, 247));
         backButton.setBorder(BorderFactory.createEmptyBorder());
         backButton.setFocusPainted(false);
-        ImageIcon backIcon = new ImageIcon("back.png");
+        ImageIcon backIcon = new ImageIcon("Pictures\\back.png");
         Image backImg = backIcon.getImage();
         Image backImgScale = backImg.getScaledInstance(backButton.getWidth(), backButton.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon backScaled = new ImageIcon(backImgScale);
@@ -240,7 +240,7 @@ public class Recharge extends JFrame {
         rechargePanel.setLayout(null);
         add(rechargePanel);
 
-        rechargeIcon = new JLabel(new ImageIcon("recipient.png"));
+        rechargeIcon = new JLabel(new ImageIcon("Pictures\\recipient.png"));
         rechargeIcon.setBounds(35,105,30,30);
         rechargePanel.add(rechargeIcon);
         
@@ -323,7 +323,7 @@ public class Recharge extends JFrame {
                     //
                     if (addText.getText().charAt(2) == '5') {
                         operatorIcon.setBounds(15,195,50,30);
-                        ImageIcon Icon = new ImageIcon("teletalk.png");
+                        ImageIcon Icon = new ImageIcon("Pictures\\teletalk.png");
                         Image Img = Icon.getImage();
                         Image ImgScale = Img.getScaledInstance(operatorIcon.getWidth(), operatorIcon.getHeight(), Image.SCALE_SMOOTH);
                         ImageIcon Scaled = new ImageIcon(ImgScale);
@@ -338,7 +338,7 @@ public class Recharge extends JFrame {
                     }
                     else if (addText.getText().charAt(2) == '9' || addText.getText().charAt(2) == '4') {
                         operatorIcon.setBounds(35,197,30,28);
-                        ImageIcon Icon = new ImageIcon("banglalink.png");
+                        ImageIcon Icon = new ImageIcon("Pictures\\banglalink.png");
                         Image Img = Icon.getImage();
                         Image ImgScale = Img.getScaledInstance(operatorIcon.getWidth(), operatorIcon.getHeight(), Image.SCALE_SMOOTH);
                         ImageIcon Scaled = new ImageIcon(ImgScale);
@@ -353,7 +353,7 @@ public class Recharge extends JFrame {
                     }
                     else if (addText.getText().charAt(2) == '6') {
                         operatorIcon.setBounds(5,197,60,28);
-                        ImageIcon Icon = new ImageIcon("airtel.png");
+                        ImageIcon Icon = new ImageIcon("Pictures\\airtel.png");
                         Image Img = Icon.getImage();
                         Image ImgScale = Img.getScaledInstance(operatorIcon.getWidth(), operatorIcon.getHeight(), Image.SCALE_SMOOTH);
                         ImageIcon Scaled = new ImageIcon(ImgScale);
@@ -368,7 +368,7 @@ public class Recharge extends JFrame {
                     }
                     else if (addText.getText().charAt(2) == '7' || addText.getText().charAt(2) == '3') {
                         operatorIcon.setBounds(35,197,30,30);
-                        ImageIcon Icon = new ImageIcon("grameen.png");
+                        ImageIcon Icon = new ImageIcon("Pictures\\grameen.png");
                         Image Img = Icon.getImage();
                         Image ImgScale = Img.getScaledInstance(operatorIcon.getWidth(), operatorIcon.getHeight(), Image.SCALE_SMOOTH);
                         ImageIcon Scaled = new ImageIcon(ImgScale);
@@ -383,7 +383,7 @@ public class Recharge extends JFrame {
                     }
                     else if (addText.getText().charAt(2) == '8') {
                         operatorIcon.setBounds(35,195,30,30);
-                        ImageIcon Icon = new ImageIcon("robi.png");
+                        ImageIcon Icon = new ImageIcon("Pictures\\robi.png");
                         Image Img = Icon.getImage();
                         Image ImgScale = Img.getScaledInstance(operatorIcon.getWidth(), operatorIcon.getHeight(), Image.SCALE_SMOOTH);
                         ImageIcon Scaled = new ImageIcon(ImgScale);
@@ -416,7 +416,7 @@ public class Recharge extends JFrame {
         amountLabel.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 16));
         passPanel.add(amountLabel);
 
-        amountIcon = new JLabel(new ImageIcon("taka.png"));
+        amountIcon = new JLabel(new ImageIcon("Pictures\\taka.png"));
         amountIcon.setBounds(35,105,30,30);
         passPanel.add(amountIcon);
 
@@ -435,7 +435,7 @@ public class Recharge extends JFrame {
         passLabel.setForeground(new Color(0, 87, 117));
         passPanel.add(passLabel);
 
-        passIcon = new JLabel(new ImageIcon("password.png"));
+        passIcon = new JLabel(new ImageIcon("Pictures\\password.png"));
         passIcon.setBounds(35,195,30,30);
         passPanel.add(passIcon);
 
@@ -456,7 +456,7 @@ public class Recharge extends JFrame {
         showButton.setBackground(Color.white);
         showButton.setFocusPainted(false);
         showButton.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
-        ImageIcon showIcon = new ImageIcon("hide.png");
+        ImageIcon showIcon = new ImageIcon("Pictures\\hide.png");
         showButton.setIcon(showIcon);
         passPanel.add(showButton);
         showButton.setVisible(true);
@@ -468,7 +468,7 @@ public class Recharge extends JFrame {
         hideButton.setBackground(Color.white);
         hideButton.setFocusPainted(false);
         hideButton.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
-        ImageIcon hideIcon = new ImageIcon("show.png");
+        ImageIcon hideIcon = new ImageIcon("Pictures\\show.png");
         hideButton.setIcon(hideIcon);
         passPanel.add(hideButton);
         hideButton.setVisible(false);
@@ -655,7 +655,7 @@ public class Recharge extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Customer");
 					File fList[] = folder.listFiles();
 
 					for (File f : fList) {

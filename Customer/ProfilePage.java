@@ -30,7 +30,7 @@ public class ProfilePage extends JFrame {
         JLabel label = new JLabel();
         label.setSize(750, 463);
 
-        ImageIcon bg = new ImageIcon("bg.png");
+        ImageIcon bg = new ImageIcon("Pictures\\bg.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -44,7 +44,7 @@ public class ProfilePage extends JFrame {
         button1.setBackground(new Color(0, 59, 79));
         button1.setBorder(BorderFactory.createEmptyBorder());
         button1.setFocusPainted(false);
-        homeIcon = new ImageIcon("home.png");
+        homeIcon = new ImageIcon("Pictures\\home.png");
         button1.setIcon(homeIcon);
         button1.setText("Home");
         button1.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -81,7 +81,7 @@ public class ProfilePage extends JFrame {
         button2.setBackground(new Color(0, 59, 79));
         button2.setBorder(BorderFactory.createEmptyBorder());
         button2.setFocusPainted(false);
-        ImageIcon historyIcon = new ImageIcon("history.png");
+        ImageIcon historyIcon = new ImageIcon("Pictures\\history.png");
         button2.setIcon(historyIcon);
         button2.setText("Transactions");
         button2.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -116,7 +116,7 @@ public class ProfilePage extends JFrame {
         button3.setBounds(495, 75, 232, 50);
         button3.setBackground(new Color(0, 59, 79));
         button3.setBorder(BorderFactory.createEmptyBorder());
-        menuIcon = new ImageIcon("menu.png");
+        menuIcon = new ImageIcon("Pictures\\menu.png");
         button3.setIcon(menuIcon);
         button3.setText("Menu");
         button3.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -148,7 +148,7 @@ public class ProfilePage extends JFrame {
         });
  
         //profile button
-        button4 = new JButton(new ImageIcon("profile.png"));
+        button4 = new JButton(new ImageIcon("Pictures\\profile.png"));
         button4.setBounds(675, 15, 40, 40);
         button4.setBackground(new Color(238, 238, 238));
         button4.setBorder(BorderFactory.createEmptyBorder());
@@ -160,7 +160,7 @@ public class ProfilePage extends JFrame {
         proPanel.setOpaque(false);
         proPanel.setBounds(0,125,200,350);
         proPanel.setLayout(null);
-        proLabel = new JLabel(new ImageIcon("profilePage.png"));
+        proLabel = new JLabel(new ImageIcon("Pictures\\profilePage.png"));
         proLabel.setBounds(10,50, 200, 200);
         proPanel.add(proLabel);
 
@@ -225,7 +225,7 @@ public class ProfilePage extends JFrame {
         fnameChange.setBackground(Color.white);
         fnameChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         fnameChange.setToolTipText("Change First Name");
-        fnameChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        fnameChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         fnameChangeLabel.setBounds(0, 0, 30, 30);
         fnameChange.add(fnameChangeLabel);
         infoPanel.add(fnameChange);
@@ -273,7 +273,7 @@ public class ProfilePage extends JFrame {
         lnameChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         //lnameChange.setBorder(BorderFactory.createEmptyBorder());
         lnameChange.setToolTipText("Change Last Name");
-        lnameChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        lnameChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         lnameChangeLabel.setBounds(0, 0, 30, 30);
         lnameChange.add(lnameChangeLabel);
         infoPanel.add(lnameChange);
@@ -321,7 +321,7 @@ public class ProfilePage extends JFrame {
         emailChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         //emailChange.setBorder(BorderFactory.createEmptyBorder());
         emailChange.setToolTipText("Change Email");
-        emailChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        emailChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         emailChangeLabel.setBounds(0, 0, 30, 30);
         emailChange.add(emailChangeLabel);
         infoPanel.add(emailChange);
@@ -369,7 +369,7 @@ public class ProfilePage extends JFrame {
         mobileChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         //mobileChange.setBorder(BorderFactory.createEmptyBorder());
         mobileChange.setToolTipText("Change Mobile");
-        mobileChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        mobileChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         mobileChangeLabel.setBounds(0, 0, 30, 30);
         mobileChange.add(mobileChangeLabel);
         infoPanel.add(mobileChange);
@@ -417,7 +417,7 @@ public class ProfilePage extends JFrame {
         genderChange.setBackground(Color.white);
         genderChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         genderChange.setToolTipText("Change Name");
-        genderChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        genderChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         genderChangeLabel.setBounds(0, 0, 30, 30);
         genderChange.add(genderChangeLabel);
         infoPanel.add(genderChange);
@@ -464,7 +464,7 @@ public class ProfilePage extends JFrame {
         dobChange.setBackground(Color.white);
         dobChange.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
         dobChange.setToolTipText("Change Date of Birth");
-        dobChangeLabel = new JLabel(new ImageIcon("Change.png"));
+        dobChangeLabel = new JLabel(new ImageIcon("Pictures\\Change.png"));
         dobChangeLabel.setBounds(0, 0, 30, 30);
         dobChange.add(dobChangeLabel);
         infoPanel.add(dobChange);
@@ -571,7 +571,7 @@ public class ProfilePage extends JFrame {
         backButton.setBackground(new Color(223, 245, 247));
         backButton.setBorder(BorderFactory.createEmptyBorder());
         backButton.setFocusPainted(false);
-        ImageIcon backIcon = new ImageIcon("back.png");
+        ImageIcon backIcon = new ImageIcon("Pictures\\back.png");
         Image backImg = backIcon.getImage();
         Image backImgScale = backImg.getScaledInstance(backButton.getWidth(), backButton.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon backScaled = new ImageIcon(backImgScale);
@@ -631,7 +631,7 @@ public class ProfilePage extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Customer");
 					File fList[] = folder.listFiles();
 
 					for (File f : fList) {

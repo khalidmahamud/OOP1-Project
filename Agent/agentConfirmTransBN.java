@@ -65,7 +65,7 @@ public class agentConfirmTransBN extends JFrame {
         backButton.setBackground(new Color(238, 238, 238));
         backButton.setBorder(BorderFactory.createEmptyBorder());
         backButton.setFocusPainted(false);
-        ImageIcon backIcon = new ImageIcon("back.png");
+        ImageIcon backIcon = new ImageIcon("Pictures\\back.png");
         Image backImg = backIcon.getImage();
         Image backImgScale = backImg.getScaledInstance(backButton.getWidth(), backButton.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon backScaled = new ImageIcon(backImgScale);
@@ -198,7 +198,7 @@ public class agentConfirmTransBN extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Agent");
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {

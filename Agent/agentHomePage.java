@@ -31,7 +31,7 @@ public class agentHomePage extends JFrame {
         JLabel label = new JLabel();
         label.setSize(750, 463);
 
-        ImageIcon bg = new ImageIcon("bg.png");
+        ImageIcon bg = new ImageIcon("Pictures\\bg.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -79,7 +79,7 @@ public class agentHomePage extends JFrame {
         button1.setBackground(new Color(0, 87, 117));
         button1.setBorder(BorderFactory.createEmptyBorder());
         button1.setFocusPainted(false);
-        homeIcon = new ImageIcon("home.png");
+        homeIcon = new ImageIcon("Pictures\\home.png");
         button1.setIcon(homeIcon);
         button1.setText("Home");
         button1.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -115,7 +115,7 @@ public class agentHomePage extends JFrame {
         button2.setBounds(250, 75, 242, 50);
         button2.setBackground(new Color(0, 59, 79));
         button2.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon historyIcon = new ImageIcon("history.png");
+        ImageIcon historyIcon = new ImageIcon("Pictures\\history.png");
         button2.setIcon(historyIcon);
         button2.setText("Transactions");
         button2.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -150,7 +150,7 @@ public class agentHomePage extends JFrame {
         button3.setBounds(495, 75, 232, 50);
         button3.setBackground(new Color(0, 59, 79));
         button3.setBorder(BorderFactory.createEmptyBorder());
-        menuIcon = new ImageIcon("menu.png");
+        menuIcon = new ImageIcon("Pictures\\menu.png");
         button3.setIcon(menuIcon);
         button3.setText("Menu");
         button3.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -182,7 +182,7 @@ public class agentHomePage extends JFrame {
         });
 
         //profile button
-        button4 = new JButton(new ImageIcon("profile.png"));
+        button4 = new JButton(new ImageIcon("Pictures\\profile.png"));
         button4.setBounds(675, 15, 40, 40);
         button4.setBackground(new Color(238, 238, 238));
         button4.setBorder(BorderFactory.createEmptyBorder());
@@ -294,7 +294,7 @@ public class agentHomePage extends JFrame {
         sendButton.setBackground(new Color(0, 59, 79));
         sendButton.setLayout(null);
         sendButton.setFocusPainted(false);
-        sendIcon = new ImageIcon("sendMoney.png");
+        sendIcon = new ImageIcon("Pictures\\sendMoney.png");
         sendButton.setHorizontalAlignment(JButton.CENTER);
         sendButton.setVerticalAlignment(JButton.TOP);
         sendButton.setIcon(sendIcon);
@@ -335,7 +335,7 @@ public class agentHomePage extends JFrame {
         rechargeButton.setSize(130, 130);
         rechargeButton.setLayout(null);
         rechargeButton.setBackground(new Color(0, 59, 79));
-        rechargeLabel = new JLabel(new ImageIcon("recharge.png"));
+        rechargeLabel = new JLabel(new ImageIcon("Pictures\\recharge.png"));
         rechargeLabel.setText("Recharge");
         rechargeLabel.setBounds(13, 14, 100, 100);
         rechargeLabel.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 17));
@@ -374,7 +374,7 @@ public class agentHomePage extends JFrame {
         addButton.setSize(130, 130);
         addButton.setLayout(null);
         addButton.setBackground(new Color(0, 59, 79));
-        addLabel = new JLabel(new ImageIcon("add.png"));
+        addLabel = new JLabel(new ImageIcon("Pictures\\add.png"));
         addLabel.setText("Add Money");
         addLabel.setBounds(13, 14, 100, 100);
         addLabel.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 17));
@@ -490,7 +490,7 @@ public class agentHomePage extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Agent");
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {

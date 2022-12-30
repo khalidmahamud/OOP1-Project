@@ -102,7 +102,7 @@ public class changePassword extends JFrame {
         showButton.setBackground(new Color(239, 250, 254));
         showButton.setFocusPainted(false);
         showButton.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon showIcon = new ImageIcon("hide.png");
+        ImageIcon showIcon = new ImageIcon("Pictures\\hide.png");
         showButton.setIcon(showIcon);
         panel.add(showButton);
         showButton.setVisible(true);
@@ -114,7 +114,7 @@ public class changePassword extends JFrame {
         hideButton.setBackground(new Color(239, 250, 254));
         hideButton.setFocusPainted(false);
         hideButton.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon hideIcon = new ImageIcon("show.png");
+        ImageIcon hideIcon = new ImageIcon("Pictures\\show.png");
         hideButton.setIcon(hideIcon);
         panel.add(hideButton);
         hideButton.setVisible(false);
@@ -153,7 +153,7 @@ public class changePassword extends JFrame {
         showButton1.setBackground(new Color(239, 250, 254));
         showButton1.setFocusPainted(false);
         showButton1.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon showIcon1 = new ImageIcon("hide.png");
+        ImageIcon showIcon1 = new ImageIcon("Pictures\\hide.png");
         showButton1.setIcon(showIcon1);
         panel.add(showButton1);
         showButton1.setVisible(true);
@@ -165,7 +165,7 @@ public class changePassword extends JFrame {
         hideButton1.setBackground(new Color(239, 250, 254));
         hideButton1.setFocusPainted(false);
         hideButton1.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon hideIcon1 = new ImageIcon("show.png");
+        ImageIcon hideIcon1 = new ImageIcon("Pictures\\show.png");
         hideButton1.setIcon(hideIcon1);
         panel.add(hideButton1);
         hideButton1.setVisible(false);
@@ -464,7 +464,7 @@ public class changePassword extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Customer");
 					File fList[] = folder.listFiles();
 
 					for (File f : fList) {

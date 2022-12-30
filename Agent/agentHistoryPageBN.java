@@ -32,7 +32,7 @@ public class agentHistoryPageBN extends JFrame {
         JLabel label = new JLabel();
         label.setSize(750, 463);
 
-        ImageIcon bg = new ImageIcon("bg.png");
+        ImageIcon bg = new ImageIcon("Pictures\\bg.png");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -65,7 +65,7 @@ public class agentHistoryPageBN extends JFrame {
         button1.setBackground(new Color(0, 59, 79));
         button1.setBorder(BorderFactory.createEmptyBorder());
         button1.setFocusPainted(false);
-        homeIcon = new ImageIcon("home.png");
+        homeIcon = new ImageIcon("Pictures\\home.png");
         button1.setIcon(homeIcon);
         button1.setText("হোম");
         button1.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -101,7 +101,7 @@ public class agentHistoryPageBN extends JFrame {
         button2.setBounds(250, 75, 242, 50);
         button2.setBackground(new Color(0, 87, 117));
         button2.setBorder(BorderFactory.createEmptyBorder());
-        ImageIcon historyIcon = new ImageIcon("history.png");
+        ImageIcon historyIcon = new ImageIcon("Pictures\\history.png");
         button2.setIcon(historyIcon);
         button2.setText("লেনদেন");
         button2.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -136,7 +136,7 @@ public class agentHistoryPageBN extends JFrame {
         button3.setBounds(495, 75, 232, 50);
         button3.setBackground(new Color(0, 59, 79));
         button3.setBorder(BorderFactory.createEmptyBorder());
-        menuIcon = new ImageIcon("menu.png");
+        menuIcon = new ImageIcon("Pictures\\menu.png");
         button3.setIcon(menuIcon);
         button3.setText("মেনু");
         button3.setFont(new Font("Potro Sans Bangla", Font.PLAIN, 25));
@@ -168,7 +168,7 @@ public class agentHistoryPageBN extends JFrame {
         });
 
         //profile button
-        button4 = new JButton(new ImageIcon("profile.png"));
+        button4 = new JButton(new ImageIcon("Pictures\\profile.png"));
         button4.setBounds(675, 15, 40, 40);
         button4.setBackground(new Color(238, 238, 238));
         button4.setBorder(BorderFactory.createEmptyBorder());
@@ -288,7 +288,7 @@ public class agentHistoryPageBN extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Agent");
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {

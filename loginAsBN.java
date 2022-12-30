@@ -11,7 +11,7 @@ import java.sql.*;
 
 public class loginAsBN extends JFrame {
     String fname, lname, mobile, email, dob, gender, nationality, password;
-    public String[] language= {"ইউজার","এজেন্ট","এডমিন"};
+    public String[] language= {"ইউজার","এজেন্ট"};
     public JLabel label;
     public JButton nextButton, backButton;
     public JComboBox <String> languageBox;
@@ -147,7 +147,7 @@ public class loginAsBN extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir"));
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {

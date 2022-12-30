@@ -26,7 +26,7 @@ public class agentLogin extends JFrame {
         JLabel label = new JLabel();
         label.setSize(350, 470);
 
-        ImageIcon bg = new ImageIcon("pic2.jpeg");
+        ImageIcon bg = new ImageIcon("Pictures\\pic2.jpeg");
         Image bgIMG = bg.getImage();
         Image bgIMGScale = bgIMG.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon bgScaled = new ImageIcon(bgIMGScale);
@@ -196,7 +196,7 @@ public class agentLogin extends JFrame {
         showButton.setBackground(Color.white);
         showButton.setFocusPainted(false);
         showButton.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
-        ImageIcon showIcon = new ImageIcon("hide.png");
+        ImageIcon showIcon = new ImageIcon("Pictures\\hide.png");
         showButton.setIcon(showIcon);
         loginPanel.add(showButton);
         showButton.setVisible(true);
@@ -208,7 +208,7 @@ public class agentLogin extends JFrame {
         hideButton.setBackground(Color.white);
         hideButton.setFocusPainted(false);
         hideButton.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(0, 59, 79)));
-        ImageIcon hideIcon = new ImageIcon("show.png");
+        ImageIcon hideIcon = new ImageIcon("Pictures\\show.png");
         hideButton.setIcon(hideIcon);
         loginPanel.add(hideButton);
         hideButton.setVisible(false);
@@ -305,7 +305,7 @@ public class agentLogin extends JFrame {
                     setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                 }
                 else if (result == JOptionPane.YES_OPTION){
-                    File folder = new File("D:\\Java Projects\\GUI Project\\OneCash");
+                    File folder = new File(System.getProperty("user.dir") + "\\Agent");
                     File fList[] = folder.listFiles();
 
                     for (File f : fList) {
