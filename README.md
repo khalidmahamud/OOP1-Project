@@ -15,5 +15,6 @@ The workspace contains three folders by default, where:
 
 - Create database and tables in mysql according to the queries in userdb.sql file 
 - Execute fakeSMTP-2.0.jar for fetching the sent e-mails
+- Install Potro Sans Bangla Regular.ttf font
 
 
